@@ -78,11 +78,11 @@ export function ekranasPradzia(z: Zaidimas): HTMLElement {
 export function ekranasIstorija(z: Zaidimas): HTMLElement {
   const i = z.istorijosPsl;
   const paveikslai = [
-    () => h('div', { class: 'scena' }, svg(knygosIkona(110)), svg(deme('mazas'), 'mazas-piesinys')),
-    () => h('div', { class: 'scena' }, svg(deme('mazas'), 'mazas-piesinys'), svg(deme('vidutinis'), 'mazas-piesinys'), svg(deme('pabeges'), 'mazas-piesinys')),
-    () => h('div', { class: 'scena' }, svg(ziezirba(0, false, 120))),
-    () => h('div', { class: 'scena' }, svg(kaukas(90)), svg(lauzas('iprasta', 100))),
-    () => h('div', { class: 'scena' }, svg(herojus(z.b.iranga, false, 100)), svg(ziezirba(0, false, 90))),
+    () => h('div', { class: 'paveikslas' }, svg(knygosIkona(110)), svg(deme('mazas'), 'mazas-piesinys')),
+    () => h('div', { class: 'paveikslas' }, svg(deme('mazas'), 'mazas-piesinys'), svg(deme('vidutinis'), 'mazas-piesinys'), svg(deme('pabeges'), 'mazas-piesinys')),
+    () => h('div', { class: 'paveikslas' }, svg(ziezirba(0, false, 120))),
+    () => h('div', { class: 'paveikslas' }, svg(kaukas(90)), svg(lauzas('iprasta', 100))),
+    () => h('div', { class: 'paveikslas' }, svg(herojus(z.b.iranga, false, 100)), svg(ziezirba(0, false, 90))),
   ];
   const paskutinis = i >= ISTORIJA.length - 1;
   return h(

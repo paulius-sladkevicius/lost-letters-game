@@ -182,7 +182,7 @@ export function langas(z: Zaidimas, l: Langas): HTMLElement {
         z,
         l.tipas,
         'Širdelės baigėsi',
-        h('div', { class: 'scena' }, svg(ziezirba(b.puslapiai.length, b.kosmetika.includes('kepure'), 70)), svg(lauzas(b.kosmetika.includes('lauzoSpalva') ? 'melyna' : 'iprasta', 80))),
+        h('div', { class: 'paveikslas' }, svg(ziezirba(b.puslapiai.length, b.kosmetika.includes('kepure'), 70)), svg(lauzas(b.kosmetika.includes('lauzoSpalva') ? 'melyna' : 'iprasta', 80))),
         skaitomas(z, ZIEZIRBA.pralaimejimas),
         h('button', { type: 'button', class: 'pagrindinis', 'data-pirmas': '1', onclick: () => z.pralaimeti() }, 'Prie laužo'),
       );
@@ -191,7 +191,7 @@ export function langas(z: Zaidimas, l: Langas): HTMLElement {
         z,
         l.tipas,
         'Didžioji Dėmė nugalėta!',
-        h('div', { class: 'scena' }, svg(ziezirba(1, b.kosmetika.includes('kepure'), 96), 'sviecia')),
+        h('div', { class: 'paveikslas' }, svg(ziezirba(1, b.kosmetika.includes('kepure'), 96), 'sviecia')),
         skaitomas(z, ZIEZIRBA.pergale),
         toliau(z),
       );
